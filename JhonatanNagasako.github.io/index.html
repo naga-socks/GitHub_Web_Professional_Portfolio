@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>J.Nagsako's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="stylesheet" type="text/css" href="final.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <img class="header__logo" src="images/Udacity_logo.png" alt="udacity logo">
+      <h1 class="header__title">
+        Jhonatan Nagasako Portfolio - STILL UNDER CONSTRUCTION
+      </h1>
+      <a id="menu" class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">News</a></li>
+      <li class="nav__item"><a href="#">UIF</a></li>
+      <li class="nav__item"><a href="#">LinkedIn</a></li>
+      <li class="nav__item"><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content">
+      <section class="hero">
+        <article class="description">
+          <h2>View from Tantalus on O'ahu</h2>
+          <p>Honolulu, HI 14-FEB-2018.</p>
+        </article>
+      </section>
+
+      <section class="news top-news">
+        <h2 class="news__title">Top news - What's Jhon been up too lately? <a href="#" class="news__more">+ more</a></h2>
+        <ul>
+          <li class="top-news__item">
+            <a href="#">Scholarship for Udacity Front-End Web Developer Nanodegree! 24-APR-2018</a>
+          </li>
+          <li class="top-news__item">
+            <a href="#">Hired at Medtronic as a Quality Engineer! 02-OCT-2017</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="news top-news">
+        <h1 class="sub-header__title">
+          Featured Works
+        </h1>
+      </section>
+
+      <section class="scores">
+        <h2 class="sub-header__title"> <a href="#">GitHub</a>
+        </h2>
+        <div>
+          <img class="header__logo" src="images/github-logo.jpg" alt="Photo by GitHub">
+        </div>
+      </section>
+
+      <section class="weather">
+        <h2 class="sub-header__title"> <a href="#">LinkedIn</a>
+        </h2>
+        <div>
+          <img class="header__logo" src="images/linkedin-logo.png" alt="Photo by LinkedIn">
+        </div>
+      </section>
+
+      <section class="weather">
+        <h2 class="sub-header__title"> <a href="#">Univeristy Innovation Fellows</a>
+        </h2>
+        <div>
+          <img class="header__logo" src="images/UIF-logo.jpg" alt="Photo by Univeristy Innovation Fellows">
+        </div>
+      </section>
+
+    </section>
+    <footer class="a">
+      <p><b>*STILL UNDER CONSTRUCTION Last updated: 14-MAY-2018*<b/></p><!--
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Follow us on Twitter</a></li>
+        <li><a href="#">RSS</a></li>
+      </ul> -->
+    </footer>
+  </main>
+  <script>
+  /*
+  * Open the drawer when the menu ison is clicked.
+  */
+  var menu = document.querySelector('#menu');
+  var main = document.querySelector('main');
+  var drawer = document.querySelector('.nav');
+
+  menu.addEventListener('click', function(e) {
+    drawer.classList.toggle('open');
+    e.stopPropagation();
+  });
+  main.addEventListener('click', function() {
+    drawer.classList.remove('open');
+  });
+
+</script>
+</body>
+</html>
